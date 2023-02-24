@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0 0 0 0;
+}
+body{
+    width: 100%;
+    height: 100vh;
+}
+.navbar{
+    width: 100%;
+    height: 10vh;
+    background-color:#e3dfdf9e;
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: oldlace;
+    background-attachment: fixed;
+    display: flex ;
+    align-items: center;
+    margin: 0px;
+}
+.navbar .logo{
+    float: left;
+    margin-left: 4px;
+    font-family: 'Spectral', serif;
+    font-size: 25px;
+    color:#f220c1 ;
+    font-weight: bolder;
+    cursor: pointer;
+
+}
+.navbar  ul {
+    display: flex;
+    margin-left: 50px;
+}
+.navbar ul li{
+    margin: 29px;
+    list-style: none;
+    font-size: medium;
+}
+.navbar ul li:hover{
+    transform: scaleX(0.9);
+    color: #f220c1;
+    cursor: pointer;
+}
+.popup{
+    margin-top: 70px;
+    position: absolute;
+    top: 100;
+    display: none;
+    width: 170px;
+    height: 200px;
+    background-color:#f220c13b;
+    border-radius: 10px;
+    backdrop-filter: blur(30);
+}
+.popup li{
+    display: flex;
+    color: white;
+    text-align: center;
+    
+    
+}
+.navbar ul li:first-child:hover + .popup{
+    display: block;
+
+
+}
+.input{
+    width: 100px;
+    height: 30px;
+    background: #f220c1;
+    border-radius: 10px;
+    align-content: center;
+    margin-left: 180px;
+    cursor: pointer;
+}
+.navbar .input .test a{
+    display: flex;
+    color: aliceblue;
+    align-self: center;
+    margin-top: 5px;
+    margin-left: 20px;
+    text-decoration: none;
+    
+}
+.main{
+    width: 100%;
+    height: 80vh;
+    background:linear-gradient(to top ,rgba(255, 255, 255, 0.275),rgba(255, 255, 255, 0.44)) ,url(pexels-evie-shaffer-3014451.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flexbox;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+
+}
+ .main-content{
+    padding-top: 200px;
+    display: flexbox;
+    align-items: center;
+
+} .main-content h3{
+    margin: 40px;
+    font-family: 'Spectral', serif;
+}
+.card{
+    position: absolute;
+    display: flexbox;
+    width: 220px;
+    height: 260px;
+    overflow: hidden;
+    margin:20px 0px 0px 40px ;
+    border-radius: 10px;
+    background-color:rgba(18, 16, 16, 0.471);
+    
+}
+.card::before{
+    content: '';
+    width: 150px;
+    height: 20vh;
+    position: absolute;
+    transform-origin: bottom right;
+    background: linear-gradient(0deg,transparent,#f90add,#ff459f);
+    animation:animate 1s linear infinite;
+}
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.card-box{
+    position:absolute;
+    width: 215px;
+    height: 255px;
+    inset: 3px;
+    border-radius: 8px;
+    background: white;
+    z-index: 10;
+
+}
+img{
+    width: 200px;
+    height: 200px;
+
+}
+.img-box a{
+    padding-left: 38px;
+    text-align: center;
+    text-decoration: none;
+    color: #f220c1;
+    font-size: medium;
+    font-weight: 300;
+}
+.card2{
+    position: absolute;
+    display: flexbox;
+    width: 220px;
+    height: 260px;
+    overflow: hidden;
+    margin:20px 0px 0px 305px ;
+    border-radius: 10px;
+    background-color:rgba(18, 16, 16, 0.471);
+    
+}
+.card2::before{
+    content: '';
+    width: 150px;
+    height: 20vh;
+    position: absolute;
+    transform-origin: bottom right;
+    background: linear-gradient(0deg,transparent,#f90add,#ff459f);
+    animation:animate 1s linear infinite;
+}
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.card-box2{
+    position:absolute;
+    width: 215px;
+    height: 255px;
+    inset: 3px;
+    border-radius: 8px;
+    background: white;
+    z-index: 10;
+
+}
+.card3{
+    position: absolute;
+    display: flexbox;
+    width: 220px;
+    height: 260px;
+    overflow: hidden;
+    margin:20px 0px 0px 570px ;
+    border-radius: 10px;
+    background-color:rgba(18, 16, 16, 0.471);
+    
+}
+.card3::before{
+    content: '';
+    width: 150px;
+    height: 20vh;
+    position: absolute;
+    transform-origin: bottom right;
+    background: linear-gradient(0deg,transparent,#f90add,#ff459f);
+    animation:animate 1s linear infinite;
+}
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.card-box3{
+    position:absolute;
+    width: 215px;
+    height: 255px;
+    inset: 3px;
+    border-radius: 8px;
+    background: white;
+    z-index: 10;
+
+}
