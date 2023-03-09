@@ -111,7 +111,7 @@ body{
     width: 220px;
     height: 260px;
     overflow: hidden;
-    margin:20px 0px 0px 40px ;
+    margin:20px 0px 0px 80px ;
     border-radius: 10px;
     background-color:rgba(18, 16, 16, 0.471);
     
@@ -142,20 +142,16 @@ body{
     border-radius: 8px;
     background: white;
     z-index: 10;
+    overflow: hidden;
 
 }
 img{
-    width: 200px;
-    height: 200px;
-
+    width: 270px;
+    height: 253px;
+    margin: 0px -100px 0px -20px;   
 }
-.img-box a{
-    padding-left: 38px;
-    text-align: center;
-    text-decoration: none;
-    color: #f220c1;
-    font-size: medium;
-    font-weight: 300;
+.img-box{
+    overflow: hidden;
 }
 .card2{
     position: absolute;
@@ -163,7 +159,7 @@ img{
     width: 220px;
     height: 260px;
     overflow: hidden;
-    margin:20px 0px 0px 305px ;
+    margin:20px 0px 0px 350px ;
     border-radius: 10px;
     background-color:rgba(18, 16, 16, 0.471);
     
@@ -201,7 +197,7 @@ img{
     width: 220px;
     height: 260px;
     overflow: hidden;
-    margin:20px 0px 0px 570px ;
+    margin:20px 0px 0px 650px ;
     border-radius: 10px;
     background-color:rgba(18, 16, 16, 0.471);
     
@@ -231,5 +227,242 @@ img{
     border-radius: 8px;
     background: white;
     z-index: 10;
+}
+.card4{
+    position: absolute;
+    display: flex;
+    width: 220px;
+    height: 260px;
+    overflow: hidden;
+    margin:20px 0px 0px 920px ;
+    border-radius: 10px;
+    background-color:rgba(18, 16, 16, 0.471);
+    
+}
+.card4::before{
+    content: '';
+    width: 150px;
+    height: 20vh;
+    position: absolute;
+    transform-origin: bottom right;
+    background: linear-gradient(0deg,transparent,#f90add,#ff459f);
+    animation:animate 1s linear infinite;
+}
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.card-box4{
+    position:absolute;
+    width: 215px;
+    height: 255px;
+    inset: 3px;
+    border-radius: 8px;
+    background: white;
+    z-index: 10;
+}
+.card5{
+    position: absolute;
+    display: flexbox;
+    width: 220px;
+    height: 260px;
+    overflow: hidden;
+    margin:300px 0px 0px 80px ;
+    border-radius: 10px;
+    background-color:rgba(18, 16, 16, 0.471);
+    
+}
+.card5::before{
+    content: '';
+    width: 150px;
+    height: 20vh;
+    position: absolute;
+    transform-origin: bottom right;
+    background: linear-gradient(0deg,transparent,#f90add,#ff459f);
+    animation:animate 1s linear infinite;
+}
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
 
+.card-box5{
+    position:absolute;
+    width: 215px;
+    height: 255px;
+    inset: 3px;
+    border-radius: 8px;
+    background: white;
+    z-index: 10;
+
+}
+.card5 .card-box5 .img-box img{
+    width: 250px;
+}
+.card4 .card-box4 .img-box img{
+    width: 245px;
+    padding-left: 10px;
+}
+.card .card-box .img-box img{
+    width: 238px;
+    padding-left: 10px;
+}
+.card6{
+    position: absolute;
+    display: flexbox;
+    width: 220px;
+    height: 260px;
+    overflow: hidden;
+    margin:300px 0px 0px 350px ;
+    border-radius: 10px;
+    background-color:rgba(18, 16, 16, 0.471);
+    
+}
+.card6::before{
+    content: '';
+    width: 150px;
+    height: 20vh;
+    position: absolute;
+    transform-origin: bottom right;
+    background: linear-gradient(0deg,transparent,#f90add,#ff459f);
+    animation:animate 1s linear infinite;
+}
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.card-box6{
+    position:absolute;
+    width: 215px;
+    height: 255px;
+    inset: 3px;
+    border-radius: 8px;
+    background: white;
+    z-index: 10;
+
+}
+.card6 .card-box6 .img-box img{
+ margin-top: 2px;
+ overflow: hidden;
+}
+.card7{
+    position: absolute;
+    display: flexbox;
+    width: 220px;
+    height: 260px;
+    overflow: hidden;
+    margin:300px 0px 0px 650px ;
+    border-radius: 10px;
+    background-color:rgba(18, 16, 16, 0.471);
+    
+}
+.card7::before{
+    content: '';
+    width: 150px;
+    height: 20vh;
+    position: absolute;
+    transform-origin: bottom right;
+    background: linear-gradient(0deg,transparent,#f90add,#ff459f);
+    animation:animate 1s linear infinite;
+}
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.card-box7{
+    position:absolute;
+    width: 215px;
+    height: 255px;
+    inset: 3px;
+    border-radius: 8px;
+    background: white;
+    z-index: 10;
+}
+.card7 .card-box7 .img-box img{
+    width: 245px;
+    height: 255px;
+}
+.card8{
+    position: absolute;
+    display: flex;
+    width: 220px;
+    height: 260px;
+    overflow: hidden;
+    margin:300px 0px 0px 920px ;
+    border-radius: 10px;
+    background-color:rgba(18, 16, 16, 0.471);
+    
+}
+.card8::before{
+    content: '';
+    width: 150px;
+    height: 20vh;
+    position: absolute;
+    transform-origin: bottom right;
+    background: linear-gradient(0deg,transparent,#f90add,#ff459f);
+    animation:animate 1s linear infinite;
+}
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.card-box8{
+    position:absolute;
+    width: 215px;
+    height: 255px;
+    inset: 3px;
+    border-radius: 8px;
+    background: white;
+    z-index: 10;
+}
+.footer{
+    margin-top: 650px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    width:100%;
+    height: 60vh;
+    background:#f588e8;
+    backdrop-filter:opacity(20px);
+    border-top-right-radius:30px;
+    border-top-left-radius: 30px;
+}
+.footer ul{
+    display: block;
+    text-align: center;
+}
+.footer ul li {
+    list-style: none;
+    margin: 20px;
+}
+.footer ul li a{
+    text-decoration: none;
+    color: black;
+}
+.contact-box{
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    gap: 20px;
 }
