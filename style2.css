@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0 0 0 0;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.navbar{
+    width: 100%;
+    height: 10vh;
+    background-color:#e3dfdf;
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: oldlace;
+    display: flex ;
+    align-items: center;
+    margin: 0px;
+    position: fixed;
+    z-index: 1;
+  
+}
+.navbar .logo{
+    float: left;
+    margin-left: 4px;
+    font-family: 'Spectral', serif;
+    font-size: 25px;
+    color:#f220c1 ;
+    font-weight: bolder;
+    cursor: pointer;
+
+}
+.navbar  ul {
+    display: flex;
+    margin-left: 50px;
+}
+.navbar ul li{
+    margin: 29px;
+    list-style: none;
+    font-size: medium;
+}
+.navbar ul li:hover{
+    transform: scaleX(0.9);
+    color: #f220c1;
+    cursor: pointer;
+}
+.popup{
+    margin-top: 70px;
+    position: absolute;
+    top: 100;
+    display: none;
+    width: 170px;
+    height: 200px;
+    background-color:#f220c13b;
+    border-radius: 10px;
+    backdrop-filter: blur(30);
+}
+.popup li{
+    display: flex;
+    color: white;
+    text-align: center;
+    
+    
+}
+.navbar ul li:first-child:hover + .popup{
+    display: block;
+
+
+}
+.login{
+    width: 100px;
+    height: 30px;
+    background: #f220c1;
+    border-radius: 10px;
+    align-content: center;
+    margin-left: 180px;
+    cursor: pointer;
+}
+.navbar .login .test a{
+    display: flex;
+    color: aliceblue;
+    align-self: center;
+    margin-top: 5px;
+    margin-left: 20px;
+    text-decoration: none;
+}
+.main{
+    width: 100%;
+    height: 90vh;
+    margin: 68px 0px 0px 0px;
+    position: relative;
+    background:url(pexels-anthony-\)-50719.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(10px);
+    
+}
+.sign{
+    display: inline-block;
+    margin: 20px 0px 0px 450px;
+    width: 350px;
+    height: 500px;
+    background-color: rgba(74, 65, 55, 0.155);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+   
+}
+.sign h2{
+     text-align: center;
+    color: #f220c1;
+    font-size: 35px;
+}
+.main .sign .user-box{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+#username{
+    font-size: 20px;
+}
+.main .sign .user-box input{
+    cursor: pointer;
+}
+.inputBox{
+    position: relative;
+    width: 300px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.inputBox input{
+    margin-top: 30px;
+    position: relative;
+    width: 100%;
+    padding: 10px 10px 10px;
+    background: transparent;
+    color: #000000;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.4s;
+    z-index: 10;
+}
+.inputBox span{
+    position:absolute;
+    left: 0px;
+    pointer-events: none;
+    top: 18px;
+    padding: 20px 10px 10px;
+    font-size: 1.5em;
+    color: #464949;
+}
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span{
+    color: #dc49e4;
+    transform:translateX(-10px) translateY(-34px);
+    font-size: 1.0em;
+    
+}
+.inputBox i{
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 2px;
+    background: #eb54ff;
+    pointer-events: none;
+    border-radius: 10px;
+    transition: 0.05s;
+    z-index: 9;
+}
+inputBox input:valid ~ i,
+.inputBox input:focus ~ i{
+    height: 44px;
+}
+.links{
+    margin: 20px 0px 0px 15px;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+.links a{
+    margin: 20px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #fcfeff;
+}   
+.links a:hover{
+    color: #ff45f6;
+}
+.summit-box{
+    margin: 45px 0px 0px 120px;
+    width: 100px;
+    height: 25px;
+    background: #dc49e4;
+    border-radius: 10px;
+    text-align: center;
+}
+.summit-box a{
+    text-align: justify;
+    text-decoration: none;
+    color: #e3dfdf;
+}
+
+.footer{
+    position: absolute;
+    margin-top: 605px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    width:100%;
+    height: 60vh;
+    background:#f588e8;
+    backdrop-filter:opacity(20px);
+}
+.footer ul{
+    display: block;
+    text-align: center;
+}
+.footer ul li {
+    list-style: none;
+    margin: 20px;
+}
+.footer ul li a{
+    text-decoration: none;
+    color: black;
+}
+.contact-box{
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    gap: 20px;
+}
+#copyright{
+    margin-top: 40px;
+    text-align: center;
+}
